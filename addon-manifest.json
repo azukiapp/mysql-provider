@@ -1,0 +1,16 @@
+{
+  "id": "mysql_addon",
+  "api": {
+    "config_vars": [ "MYSQL_ADDON_DATABASE_URL" ],
+    "password": "cYtNZBNXS9A0ds3z",
+    "sso_salt": "jc6OMYLE7Q3IbJRj",
+    "production": {
+      "base_url": "https://yourapp.com/heroku/resources",
+      "sso_url": "https://yourapp.com/sso/login"
+    },
+    "test": {
+      "base_url": "http://localhost:4567/heroku/resources",
+      "sso_url": "http://localhost:4567/sso/login"
+    }
+  }
+}

@@ -1,6 +1,8 @@
 require "mysql2"
-require "database"
+require "sinatra/base"
 
+require "database"
+require "web/resource"
 
 client = Mysql2::Client.new(:host => "localhost",
                             :username => "root",
