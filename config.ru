@@ -5,4 +5,5 @@ $LOAD_PATH.unshift(libdir) unless $LOAD_PATH.include?(libdir)
 
 require "mysql_provider"
 
+use Rack::CommonLogger, $stdout
 map('/heroku/resources') { run Web::Resource }
